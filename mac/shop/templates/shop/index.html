@@ -1,43 +1,74 @@
 {% extends 'shop/basic.html' %}
 {% block title%} MyAwesomeCart - Best Ecommerce Website{% endblock %}
 {% block css %}
+
 .col-md-3
 {
+    color:white;
+    background-color: #000;
 display: inline-block;
 margin-left:-4px;
 }
+
 .carousel-indicators .active {
+    color: white;
 background-color: blue;
 }
+
 .col-md-3 img{
+background-color:#000;
 width: 170px;
 height: 200px;
+color: white;
 }
+
 body .carousel-indicator li{
 background-color: blue;
 }
+
 body .carousel-indicators{
 bottom: -40px;
 }
 .carousel-indicators li {
 
 
-    background-color: #7270fc;
+
+    background-color: #000;
 }
+
 body .carousel-control-prev-icon,
 body .carousel-control-next-icon{
-background-color: blue;
+background-color: black;
 }
+
 .carousel-control-prev,
 .carousel-control-next{
 top: auto;
+background-color: #000;
 bottom: auto;
 padding-top: 222px;
 }
+
 body .no-padding{
 padding-left: 0,
 padding-right: 0;
 }
+
+.btn-primary{
+    color: white;
+    border-color:white;
+}
+
+.card-body{
+    background-color: #000;
+}
+
+.btn-outline-success{
+    color:white;
+    background-color: black;
+    border-color:white;
+}
+
 {% endblock %}
 {% block body %}
 {% load static %}

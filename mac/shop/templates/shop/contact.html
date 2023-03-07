@@ -1,6 +1,22 @@
 {% extends 'shop/basic.html' %}
 
 {% block title%} Contact Us - My Awesome Cart{% endblock %}
+
+{% block css %}
+.btn-success{
+  color:white;
+  background-color:black;
+  border-color:white;
+}
+.btn-success:hover{
+  background-color: black;
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px white;
+  transform: scale(1.05);
+}
+
+{% endblock %}
+
 {% block body %}
 <div class="container my-3">
     <h3>Contact Us</h3>
@@ -32,7 +48,7 @@
 {% block js %}
 <script>
 {% if thank %}
-alert('Thanks for contacting us. We will reach out to you soon!');
+alert('Thaks for contacting us! We will reach out to you soon.')
 localStorage.clear();
 document.location = "/shop/contact";
 {% endif %}
